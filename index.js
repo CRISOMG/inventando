@@ -39,6 +39,7 @@ function renderPokemon(HTMLPokeCardElement) {
   pokeBar.append(HTMLPokeCardElement);
 }
 // 14 o 15
-for (let i = 1; i <= 100; i++) {
+let i = 1;
+for (let i = 1; i <= 13; i++) {
   inspectPokemon(i);
 }

@@ -5,10 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      svg {
+        width: 60px;
+        /* position: absolute; */
+      }
+      .switch-bar {
+        width: 100%;
+        height: 164px;
+        /* padding: 10px; */
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        flex-direction: row;
+        background-color: cadetblue;
+      }
+      .left {
+        width: 40px;
+        display: flex;
+        z-index: 2;
+        left: 0;
+      }
+      .right {
+        display: flex;
+        width: 40px;
+        z-index: 2;
+        right: 0;
+      }
+    </style>
   </head>
   <body>
     <main class="container">
-      <section id="pokeBar" class="poke-bar"></section>
+      <section class="switch-bar">
+        <div id="left" class="left">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <title>volver</title>
+            <polyline
+              points="328 112 184 256 328 400"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 48px;
+              "
+            />
+          </svg>
+        </div>
+
+        <section id="pokeBar" class="poke-bar"></section>
+
+        <div id="right" class="right">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <title>ver mas</title>
+            <polyline
+              points="184 112 328 256 184 400"
+              style="
+                fill: none;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 48px;
+              "
+            />
+          </svg>
+        </div>
+      </section>
     </main>
   </body>
   <script src="index.js"></script>
